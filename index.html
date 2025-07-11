@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>To Do List</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <h1>To-Do List</h1>
+            <p>Atur tugas dengan mudah dan efisien</p>
+        </header>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Masukkan tugas baru...">
+            <button id="addTaskBtn">Tambah Tugas</button>
+        </div>
+        <div class="task-controls">
+            <button id="markAllCompleted">Tandai Semua Selesai</button>
+            <button id="deleteAllTasks">Hapus Semua</button>
+        </div>
+        <div class="tasks-container">
+            <ul class="task-list" id="taskList">
+                <!-- Tasks will be added here dynamically -->
+                <li class="no-tasks">Tidak ada tugas. Tambahkan tugas baru!</li>
+            </ul>
+        </div>
+        <div class="history-container">
+            <div class="history-title">
+                <h2>Riwayat Tugas</h2>
+                <button id="clearHistory" class="task-delete">Hapus Riwayat</button>
+            </div>
+            <ul class="history-list" id="historyList">
+                <!-- History items will be added here dynamically -->
+                <li class="no-tasks">Belum ada riwayat tugas</li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
